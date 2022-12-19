@@ -1,0 +1,269 @@
+#bordercontent {
+    top: 100px;
+    display: block;
+    width: 100%;
+    position: relative;
+    transform: translate(0%, 0%);
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+#content>p {
+    font-size: 20px;
+    color: #09c;
+    transform: translate(50%, 0%);
+    width: 50vw;
+    font-weight: bold;
+}
+
+.cnt p {
+    margin: 0;
+}
+
+.cnt a {
+    text-decoration: none;
+}
+
+.cnt {
+    margin-top: 6px;
+    height: 9.5vh;
+    background-color: #bbe1fa;
+    width: 60vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: translate(44%, 0%);
+}
+
+.partloc {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f4c75;
+    color: white;
+}
+
+.partloc>p:nth-child(1) {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px 0px 0px 0;
+    text-transform: uppercase;
+}
+
+.partloc>p:nth-child(2) {
+    font-size: 18px;
+    margin: 0;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.cnt>.partdesc {
+    width: 65%;
+    color: white;
+    background-color: #3282b8;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    overflow-y: auto;
+}
+
+.cnt>.partdesc>#disc {
+    display: flex;
+    align-items: center;
+    padding-top: 6px;
+}
+
+.cnt>.partdesc>#disc>p:nth-child(1) {
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    background-color: #0f4c75;
+    padding: 0px 4px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.cnt>.partdesc>#disc>p#obso {
+    background-color: rgb(172, 2, 2);
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    padding: 0px 4px;
+    border-radius: 4px;
+}
+
+.cnt>.partdesc>#disc>p:last-child {
+    margin-left: auto;
+    font-style: italic;
+}
+
+.cnt>.partdesc>#disc>p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.cnt>.partdesc>p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.cnt>.partdesc>a {
+    padding: 2px 6px 2px 6px;
+    border-radius: 4px;
+    color: white;
+    background-color: #09c;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.cnt>.partdesc>a:hover {
+    background-color: #00ccff;
+    color: #007a99;
+    transition: 0.5s;
+    outline: none;
+}
+
+.cnt>.qty {
+    color: #1b262c;
+    display: flex;
+    font-size: 14px;
+    padding: 0px 10px;
+    flex-direction: column;
+    margin-left: auto;
+    align-self: center;
+    width: 14%;
+}
+
+.cnt>.qty>p:nth-child(1) {
+    text-transform: uppercase;
+}
+
+.cnt>.qty>p:nth-child(4) {
+    font-size: 12px;
+}
+
+.cnt>.inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0f4c75;
+    width: 3%;
+    height: 100%;
+}
+
+.cnt>.inf button {
+    transition: 0.5s;
+    padding: 25% 0px 25% 0px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1.3vw;
+    margin-top: 0px;
+    outline: none;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.cnt>.inf button:hover {
+    background-color: #bbe1fa;
+    color: #0f4c75;
+}
+
+.cnt>.inf>#imageview {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+    transition: 0.5s;
+}
+
+.cnt>.inf>#imageview:hover {
+    background-color: #bbe1fa;
+    color: #0f4c75;
+}
+
+.cnt>button.editsec {
+    display: flex;
+    background-color: #bbe1fa;
+    border-radius: 0px;
+    width: fit-content;
+    padding: 0px 6px;
+    margin-top: 0;
+}
+
+.cnt>button.editsec:hover {
+    background-color: #0f4c75;
+    transition: 0.5s;
+}
+
+.cnt>button.editsec:hover .edit-icon {
+    color: #bbe1fa;
+}
+
+.cnt>button.editsec>.edit-icon {
+    display: inline-block;
+    transform: rotateZ(90deg);
+    font-size: 36px;
+    text-align: center;
+    align-self: center;
+    width: fit-content;
+    color: #0f4c75;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 0px;
+    outline: none;
+}
+
+
+/* */
+
+.cnt>p.note {
+    display: none;
+    padding: 5px;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.cnt>.date {
+    margin-left: auto;
+    display: none;
+    width: fit-content;
+    align-self: center;
+    padding-right: 6px;
+}
+
+.cnt>.notecls {
+    display: none;
+    justify-content: center;
+}
+
+.cnt>.notecls button {
+    background-color: transparent;
+    padding: 6px 4px 2px 4px;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 0px;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.cnt>.notecls button:hover {
+    background-color: #0f4c75;
+    transition: 0.5s;
+}

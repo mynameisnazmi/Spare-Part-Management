@@ -1,0 +1,75 @@
+#menu {
+    width: 50vw;
+    transform: translate(50%, 0);
+    font-size: 2em;
+    color: #3282b8;
+    margin: 4vh 0px;
+}
+
+
+#upd_pm,#upd,input[name=button]{
+    background-color: #bbe1fa;
+    color: #0f4c75;
+    border: none;
+    margin-top: 0px;
+}
+#register {
+    width: 50vw;
+    transform: translate(50%, 0);
+    font-size: 2vh;
+}
+
+#register input,
+#register select {
+    font-size: 2vh;
+
+}
+
+#register .row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+#register .row>.col-25 {
+    width: 15%;
+}
+
+#register .row>.col-75 {
+    width: 85%;
+}
+
+#register>.row>.col-75 #area,
+#register>.row>.col-75 #partname,
+#register>.row>.col-75 #itemcode {
+    text-transform: uppercase;
+}
+
+.resultsearch_area {
+    position: absolute;
+    overflow-x: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.resultsearch_area button {
+    padding: 0;
+}
+
+.resultsearch_area>button p {
+    padding: 0;
+}
+
+.resultsearch_icode, .resultsearch_cat{
+    position: absolute;
+    overflow-x: auto;
+    width: 100%;
+    padding: 0;
+}
+.resultsearch_cat{
+    width: 85%;
+}
+
+.resultsearch_icode button,.resultsearch_cat button {
+    padding: 0;
+}

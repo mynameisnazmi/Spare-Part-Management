@@ -1,0 +1,31 @@
+#body #bodyartikel {
+    width: 25%;
+    margin: 50px auto;
+    top: 0;
+    align-content: center;
+    position: relative;
+}
+
+#register #col-25 {
+    float: left;
+    padding: 17px 0 0;
+    width: 25%;
+}
+
+#register #col-25r {
+    float: right;
+    width: 30%;
+}
+
+#register #col-75 {
+    float: left;
+    padding: 20px 0 0;
+    width: 75%;
+}
+
+input[type=button] {
+    font-size: 18px;
+    background-color: #bbe1fa;
+    color: #3282b8;
+    border-style: none;
+}

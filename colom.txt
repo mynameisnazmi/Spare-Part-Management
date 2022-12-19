@@ -1,0 +1,65 @@
+part_of,part_location,part_name,part_spec,part_used,part_spare,unit,part_pict,note
+item_code
+filter base on
+machine name 
+partlocation
+partname
+
+search
+relation partafter search
+
+        <?php
+session_start();
+header('Content-type', 'application/json');
+$status = false;
+$msg = "";
+if (!empty($_POST['button']) && !empty($_SESSION['nik'])) {
+	//post
+pm.match_id,pm.match_area,pm.match_part,pm.match_update,pm.match_priority,pm.match_used,pm.match_spare,pm.match_note
+	$partname = strtolower($_POST['partname']);
+	$spec = strtolower($_POST['spec']);
+	$partprio = strtolower($_POST['partprio']);
+	$itemcode = strtolower($_POST['itemcode']);
+	$partused = $_POST['partused'];
+	$unit = strtolower($_POST['unit']);
+	$note = strtolower($_POST['note']);
+	$sprpart = $_POST['sprpart'];
+	$file = $_FILES["fileupload"]["tmp_name"];
+	$datenow = date("Ymd");
+
+	$targetFile =  "../pict/" . $itemcode . ".jpg";
+	if (!empty($file)) {
+		if (file_exists($targetFile)) {
+			$status = true;
+			$msg = "File Sudah Terdaftar";
+		} else {
+			move_uploaded_file($file, $targetFile);
+		}
+	}
+	include "db.php";
+	$cek = mysqli_query($con, "SELECT part_id FROM data_part WHERE (item_code = '$itemcode' AND part_name = '$partname' AND  part_of = '$partof' AND part_location = '$partloc')");
+	if (mysqli_num_rows($cek) <= 0) {
+		$result = mysqli_query($con, "INSERT INTO data_part (item_code,part_priority,part_of,part_location,part_name,part_spec,part_used,part_spare,update_date,unit,part_pict,note) 
+		VALUES ('$itemcode','$partprio','$partof','$partloc','$partname','$spec','$partused','$sprpart','$datenow','$unit','$itemcode.jpg','$note')");
+		if (!$result) {
+			$msg = ("Error description: " . mysqli_error($con));
+		} else {
+			$status = true;
+			$msg = "Item berhasil di tambahkan";
+		}
+	} else {
+		$status = true;
+		$msg = "Item Sudah Terdaftar";
+	}
+
+	$status = true;
+	mysqli_close($con);
+}
+//else{header("location:index.php");}
+
+echo json_encode(
+	array(
+		'status' => $status,
+		'msg' => $msg
+	)
+);

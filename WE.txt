@@ -1,0 +1,171 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     data_history
+Instances:    500
+Attributes:   6
+              part_names
+              lifetime
+              load_cap
+              load_act
+              temp_act
+              changes
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+part_names = active_interface_module
+|   lifetime <= 27006617: No (5.0)
+|   lifetime > 27006617: Yes (3.0/1.0)
+part_names = relay_emergency_block
+|   load_act <= 18: Yes (3.0)
+|   load_act > 18: No (11.0/4.0)
+part_names = proximity_magnetic_sensor
+|   temp_act <= 86: Yes (6.0)
+|   temp_act > 86
+|   |   temp_act <= 113: No (2.0)
+|   |   temp_act > 113: Yes (3.0/1.0)
+part_names = bus_transmitter: Yes (16.0/7.0)
+part_names = fuse_holder: Yes (10.0/1.0)
+part_names = encoder
+|   lifetime <= 20305491
+|   |   temp_act <= 129: Yes (6.0)
+|   |   temp_act > 129: No (2.0)
+|   lifetime > 20305491: No (4.0)
+part_names = auxiliary_switch_block
+|   load_cap <= 74: No (6.0/1.0)
+|   load_cap > 74
+|   |   lifetime <= 18812802: Yes (5.0)
+|   |   lifetime > 18812802: No (3.0/1.0)
+part_names = fan_motor: Yes (14.0/6.0)
+part_names = ac_servo_synchronous_motor: Yes (14.0/7.0)
+part_names = digital_input
+|   lifetime <= 8458652: No (5.0)
+|   lifetime > 8458652: Yes (8.0/2.0)
+part_names = computer
+|   load_cap <= 46: Yes (2.0)
+|   load_cap > 46: No (9.0/2.0)
+part_names = switch_disconnector
+|   temp_act <= 106: Yes (10.0/2.0)
+|   temp_act > 106: No (3.0)
+part_names = repeater
+|   load_cap <= 51: No (3.0)
+|   load_cap > 51: Yes (7.0/1.0)
+part_names = single_motor_module
+|   temp_act <= 67: Yes (7.0/1.0)
+|   temp_act > 67: No (15.0/4.0)
+part_names = analog_output: Yes (17.0/7.0)
+part_names = transformator
+|   temp_act <= 83: Yes (3.0)
+|   temp_act > 83: No (5.0)
+part_names = proportional_valve
+|   load_act <= 16: No (3.0)
+|   load_act > 16
+|   |   load_act <= 44: Yes (4.0)
+|   |   load_act > 44: No (4.0/1.0)
+part_names = interface_module: Yes (18.0/7.0)
+part_names = limit_switch
+|   temp_act <= 109: Yes (9.0/3.0)
+|   temp_act > 109: No (4.0)
+part_names = air_conditioner_panel
+|   load_act <= 33: Yes (8.0/2.0)
+|   load_act > 33: No (4.0)
+part_names = circuit_breaker_motor_protection: No (19.0/7.0)
+part_names = control_unit
+|   load_cap <= 94
+|   |   load_cap <= 67: No (3.0/1.0)
+|   |   load_cap > 67: Yes (4.0)
+|   load_cap > 94: No (3.0)
+part_names = digital_output: No (25.0/12.0)
+part_names = contactor: Yes (11.0/5.0)
+part_names = sensor_angle
+|   temp_act <= 88: Yes (6.0/1.0)
+|   temp_act > 88
+|   |   lifetime <= 11916425: Yes (3.0/1.0)
+|   |   lifetime > 11916425: No (6.0)
+part_names = emergency_switch: No (12.0/5.0)
+part_names = analog_input: No (14.0/6.0)
+part_names = mcb_1_phase: No (3.0/1.0)
+part_names = power_supply
+|   temp_act <= 70: Yes (6.0)
+|   temp_act > 70
+|   |   lifetime <= 27006617: No (5.0/1.0)
+|   |   lifetime > 27006617: Yes (2.0)
+part_names = sensor_module_cabinet: No (4.0/1.0)
+part_names = ac_induction_motor
+|   load_cap <= 79
+|   |   temp_act <= 53: Yes (3.0)
+|   |   temp_act > 53: No (6.0)
+|   load_cap > 79: Yes (4.0)
+part_names = double_motor_module: Yes (14.0/4.0)
+part_names = control_module_profibus
+|   temp_act <= 72: No (4.0)
+|   temp_act > 72
+|   |   load_cap <= 53: No (2.0)
+|   |   load_cap > 53: Yes (4.0)
+part_names = gearbox: Yes (9.0/2.0)
+part_names = selenoid_valve
+|   load_cap <= 69: Yes (4.0)
+|   load_cap > 69
+|   |   temp_act <= 87: No (4.0)
+|   |   temp_act > 87: Yes (3.0/1.0)
+part_names = nh_fuse: No (13.0/6.0)
+part_names = proximity_sensor
+|   lifetime <= 5923381: No (2.0)
+|   lifetime > 5923381: Yes (9.0/1.0)
+part_names = active_line_module
+|   load_cap <= 62: No (3.0)
+|   load_cap > 62: Yes (3.0)
+part_names = sensor_reflex
+|   load_cap <= 57: Yes (4.0/1.0)
+|   load_cap > 57: No (4.0)
+part_names = line_reactor
+|   load_cap <= 54: No (6.0/1.0)
+|   load_cap > 54: Yes (6.0)
+part_names = output_interface
+|   lifetime <= 19092381: Yes (3.0)
+|   lifetime > 19092381: No (3.0)
+
+Number of Leaves  : 	76
+
+Size of the tree : 	112
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         382               76.4    %
+Incorrectly Classified Instances       118               23.6    %
+Kappa statistic                          0.5262
+K&B Relative Info Score                 42.3382 %
+K&B Information Score                  211.395  bits      0.4228 bits/instance
+Class complexity | order 0             499.3015 bits      0.9986 bits/instance
+Class complexity | scheme              309.111  bits      0.6182 bits/instance
+Complexity improvement     (Sf)        190.1906 bits      0.3804 bits/instance
+Mean absolute error                      0.296 
+Root mean squared error                  0.3847
+Relative absolute error                 59.3085 %
+Root relative squared error             77.0123 %
+Total Number of Instances              500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.793    0.268    0.764      0.793    0.778      0.527    0.865     0.874     Yes
+                 0.732    0.207    0.764      0.732    0.748      0.527    0.865     0.860     No
+Weighted Avg.    0.764    0.239    0.764      0.764    0.764      0.527    0.865     0.867     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 207  54 |   a = Yes
+  64 175 |   b = No
+

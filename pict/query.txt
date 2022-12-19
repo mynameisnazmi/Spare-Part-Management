@@ -1,0 +1,3 @@
+SELECT * FROM `data_part` WHERE (part_of = "aa" OR part_of = "bb") AND (part_location = "e01" OR part_location = "operator") AND (part_name = "repeater" OR part_name = "selenoid_valve")
+
+

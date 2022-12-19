@@ -1,0 +1,412 @@
+    #top {
+        top: 0;
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        background-color: #0f4c75;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        height: 90px;
+        width: 100%;
+    }
+    
+    #top>#search>#insearch {
+        display: none;
+    }
+    
+    a#logout {
+        display: block;
+        padding: 0px 1vw;
+        text-decoration: none;
+        color: #0f4c75;
+        background-color: #bbe1fa;
+        font-size: 1.3vw;
+        width: auto;
+        padding-top: 30px;
+    }
+    
+    a#logout:hover {
+        transition: 0.5s;
+        color: #bbe1fa;
+        background-color: #0f4c75;
+    }
+    
+    #appsname {
+        padding: 0px 1.3vw;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        font-size: 1.8vw;
+        align-self: center;
+    }
+    
+    #top>#search {
+        padding-top: 25px;
+    }
+    
+    #top>#search input {
+        width: 24vw;
+        padding: 0.5vw 0.5vw;
+        box-sizing: border-box;
+        border: none;
+        font-size: 1.1vw;
+        background-color: #ffffff;
+        border-radius: 0 1px 1px 0;
+        outline: none;
+    }
+    
+    #top>#search>#insearch>button {
+        background-color: transparent;
+        width: fit-content;
+        padding: 12px 20px;
+        outline: none;
+        margin-top: 0;
+    }
+    
+    .resultsearch {
+        width: 24vw;
+    }
+    
+    .resultsearch,
+    .resultsearch_part,
+    .resultsearch_area,
+    .resultsearch_cat,
+    .resultsearch_icode {
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        max-height: 500px;
+    }
+    
+    .resultsearch_part,
+    .resultsearch_area,
+    .resultsearch_cat,
+    .resultsearch_icode {
+        max-height: 200px;
+    }
+    
+    .resultsearch button,
+    .resultsearch_area button,
+    .resultsearch_part button,
+    .resultsearch_cat button,
+    .resultsearch_icode button {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        float: none;
+        text-align: left;
+        margin-top: 0;
+        background-color: white;
+    }
+    
+    .resultsearch button:hover,
+    .resultsearch_part button:hover,
+    .resultsearch_area button:hover,
+    .resultsearch_cat .items_cat:hover,
+    .resultsearch_icode button:hover {
+        color: #063a74;
+        background-color: #dedede;
+        transition: 0.5s;
+    }
+    
+    .resultsearch>.items p,
+    .resultsearch_part>.items_part p,
+    .resultsearch_area>.items_area p,
+    .resultsearch_cat>.items_cat p,
+    .resultsearch_icode>.items_icode p {
+        margin: 0;
+    }
+    
+    .resultsearch_area>.items_area p,
+    .resultsearch_cat>.items_cat p,
+    .resultsearch_icode>.items_icode p {
+        text-transform: uppercase;
+    }
+    
+    .resultsearch>.items>#spec {
+        width: 65%;
+        overflow: hidden;
+        text-transform: uppercase;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .resultsearch>.items>#loc {
+        text-transform: capitalize;
+    }
+    
+    .resultsearch>.items>#mach {
+        text-transform: uppercase;
+    }
+    
+    .resultsearch>.items,
+    .resultsearch_part>.items_area,
+    .resultsearch_area>.items_area,
+    .resultsearch_cat>.items_cat,
+    .resultsearch_icode>.items_icode {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .resultsearch>.items p:nth-child(2) {
+        margin-left: auto;
+    }
+    
+    #navhead {
+        display: flex;
+        flex-direction: row;
+        margin: 6vh 0 20px 0;
+        transform: translate(35%, 0%);
+        width: 59vw;
+    }
+    
+    #navhead button {
+        width: fit-content;
+        height: fit-content;
+        background-color: #bbe1fa;
+        color: #0f4c75;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 0px;
+        outline: none;
+        z-index: 100;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    #navhead button:hover {
+        background-color: #0f4c75;
+        color: #bbe1fa;
+    }
+    
+    #titlenav {
+        width: 50vw;
+        color: #3282b8;
+        font-size: 1.7vw;
+        transform: translate(8%, 0%);
+    }
+    
+    #title {
+        color: #3282b8;
+        display: block;
+        font-size: 1.7vw;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin: 4vh 0 20px 0;
+        transform: translate(44%, 0%);
+        width: 60vw;
+    }
+    
+    #top>#headermenu {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-left: auto;
+    }
+    
+    #top>#headermenu button {
+        background-color: transparent;
+        color: white;
+        padding: 0 0.5vw;
+        margin-top: 0;
+        width: 100px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 0;
+        font-size: 1vw;
+    }
+    
+    #identity {
+        padding: 0px 1vw;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #textname,
+    #textdept {
+        white-space: nowrap;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: white;
+        display: block;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 1.1vw;
+        line-height: inherit;
+        text-align: right;
+    }
+    
+    #filtersection {
+        display: block;
+        top: 90px;
+        /* background-color: slategrey; 
+     display: flex;*/
+        position: fixed;
+        left: 0;
+        overflow: auto;
+        white-space: nowrap;
+        flex-direction: row;
+        z-index: 10;
+        max-height: 82vh;
+        width: auto;
+    }
+    
+    #filtername {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #filtersection>#filtername>.filterpart {
+        padding: 10px;
+        color: white;
+        background-color: #3282b8;
+        margin-top: 0;
+        width: auto;
+        font-size: 20px;
+        border-radius: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    #Machine,
+    #Location,
+    #Category {
+        background-color: transparent;
+        width: auto;
+        display: block;
+        flex-direction: column;
+        overflow-y: auto;
+        width: 16vw;
+    }
+    
+    #Machine>.container,
+    #Location>.container {
+        text-transform: uppercase;
+    }
+    
+    #Category>.container {
+        text-transform: capitalize;
+    }
+    /* The container */
+    
+    .container {
+        color: white;
+        display: flex;
+        position: relative;
+        padding-left: 35px;
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        justify-content: flex-start;
+    }
+    /* Hide the browser's default checkbox */
+    
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    /* Create a custom checkbox */
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+    /* On mouse-over, add a grey background color */
+    
+    .container:hover input~.checkmark {
+        background-color: #ccc;
+    }
+    /* When the checkbox is checked, add a blue background */
+    
+    .container input:checked~.checkmark {
+        background-color: #bbe1fa;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+    
+    .container input:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+    
+    .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid #0f4c75;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    #pagesection {
+        display: none;
+        top: 6px;
+        /* background-color: slategrey; 
+     display: flex;*/
+        position: fixed;
+        left: 79.5vw;
+        width: auto;
+        flex-direction: row;
+        z-index: 10;
+    }
+    
+    #pagesection>button,
+    #pagesection>a {
+        background-color: #3282b8;
+        margin: 0;
+        width: auto;
+        font-size: 24px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 0px 10px 5px 10px;
+    }
+    
+    #pagesection>a {
+        color: white;
+    }
+    
+    #pagesection>a:nth-child(1) {
+        margin-right: 20px;
+    }
+    
+    #pagesection>button:nth-child(2) {
+        margin-right: 10px;
+    }
+    
+    #pagesection>button:hover,
+    #pagesection>a:hover {
+        background-color: #bbe1fa;
+        color: #3282b8;
+        transition: 0.3s;
+    }
+    
+    #filtername>#but1:hover #machine {
+        display: block;
+    }

@@ -1,0 +1,5 @@
+SELECT `part_names`, count(*) as NUM FROM part_history GROUP BY `part_names`
+SELECT * FROM `part_history` WHERE `part_names` = 'computer' ORDER BY `history_date` DESC LIMIT 0,1 
+
+gain ratio = untuk memilih atribut akar
+=$Q$4-(((N6/$N$4)*Q6)+((N7/$N$4)*Q7)+((N8/$N$4)*Q8)+((N9/$N$4)*Q9)+((N10/$N$4)*Q10)+((N11/$N$4)*Q11)+((N12/$N$4)*Q12)+((N13/$N$4)*Q13)+((N14/$N$4)*Q14)+((N15/$N$4)*Q15)+((N16/$N$4)*Q16)+((N17/$N$4)*Q17)+((N18/$N$4)*Q18)+((N19/$N$4)*Q19)+((N20/$N$4)*Q20)+((N21/$N$4)*Q21)+((N22/$N$4)*Q22)+((N23/$N$4)*Q23)+((N24/$N$4)*Q24)+((N25/$N$4)*Q25)+((N26/$N$4)*Q26)+((N27/$N$4)*Q27)+((N28/$N$4)*Q28)+((N29/$N$4)*Q29)+((N30/$N$4)*Q30)+((N31/$N$4)*Q31)+((N32/$N$4)*Q32)+((N33/$N$4)*Q33)+((N34/$N$4)*Q34)+((N35/$N$4)*Q35)+((N36/$N$4)*Q36)+((N37/$N$4)*Q37)+((N38/$N$4)*Q38)+((N39/$N$4)*Q39)+((N40/$N$4)*Q40)+((N41/$N$4*411)+((N42/$N$4)*Q42)+((N43/$N$4)*Q43)+((N44/$N$4)*Q44)+((N45/$N$4)*Q45)+((N46/$N$4)*Q46)))
